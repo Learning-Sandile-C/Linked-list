@@ -19,7 +19,10 @@ namespace linked_list
     public partial class MainWindow : Window
     {
         LinkedList linkedList = new LinkedList();
-        List<Node> tempNodes;
+
+        GenLinkedList<string> GenLinkedList = new GenLinkedList<string>();
+        GenLinkedList<Television> GenLinkedListMovie = new GenLinkedList<Television>();
+
         public MainWindow()
         {
             InitializeComponent();

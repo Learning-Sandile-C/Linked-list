@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace linked_list
 {
-    class GenLinkedList
+    class Movie : Television
     {
+        double runtime;
     }
 }
