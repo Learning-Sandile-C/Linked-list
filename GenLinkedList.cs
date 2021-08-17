@@ -8,5 +8,11 @@ namespace linked_list
 {
     class GenLinkedList
     {
+        public static GenLinkedListHelper<Movie> genLinkedListMovie = new GenLinkedListHelper<Movie>();
+
+
+
+
+        public static GenLinkedListHelper<Series> genLinkedListSeries = new GenLinkedListHelper<Series>();
     }
 }

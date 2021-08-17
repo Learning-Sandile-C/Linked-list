@@ -20,14 +20,13 @@ namespace linked_list
     {
         LinkedList linkedList = new LinkedList();
 
-        GenLinkedList<string> GenLinkedList = new GenLinkedList<string>();
-        GenLinkedList<Television> GenLinkedListMovie = new GenLinkedList<Television>();
+
 
         public MainWindow()
         {
             InitializeComponent();
 
-            testingAddingToList();
+            //testingAddingToList();
         }
 
         private void testingAddingToList()
@@ -38,7 +37,6 @@ namespace linked_list
             linkedList.Append("this is 4");
             linkedList.Append("this is 5");
             linkedList.Append("this is 6");
-            linkedList.Append("this is 7");
             linkedList.Append("this is 8");
             linkedList.Append("this is 9");
             linkedList.Append("this is 10");
@@ -52,6 +50,11 @@ namespace linked_list
                 counter++;
             }
 
+        }
+
+        private void GenMovieAdd()
+        {
+            GenLinkedList.genLinkedListMovie.Append(new Movie(100, "Super bad", 8));
         }
 
         private void Button_Click_Left(object sender, RoutedEventArgs e)
